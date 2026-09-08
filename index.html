@@ -1,129 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yellowmudblanket</title>
-<meta name="description" content="Undyed alpaca throw. 2026. Waȟpetuwaŋ.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&family=Noto+Sans:wght@400;500&family=Spectral:wght@200;300;400&display=swap">
-<style>
-  *, *::before, *::after { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; }
-  body {
-    min-height: 100vh;
-    background: oklch(0.958 0.005 240);
-    color: oklch(0.245 0.009 250);
-    font-family: Barlow, system-ui, sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
-  a { color: inherit; text-decoration: none; transition: color 160ms ease; }
-  a:hover { color: oklch(0.245 0.009 250); }
-  a:active { color: oklch(0.16 0.009 250); }
-  a:focus-visible { outline: 2px solid oklch(0.34 0.008 250); outline-offset: 3px; }
-  ::selection { background: oklch(0.245 0.009 250); color: oklch(0.958 0.005 240); }
-
-  .page {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    padding: clamp(28px, 4.4vw, 56px);
-    gap: clamp(32px, 5vw, 64px);
-  }
-
-  .head {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 24px;
-  }
-  .wordmark {
-    font-family: Spectral, serif;
-    font-weight: 300;
-    font-size: clamp(11px, 1.05vw, 13px);
-    line-height: 1;
-    letter-spacing: 0.34em;
-    text-transform: uppercase;
-  }
-  .social {
-    font-size: clamp(9px, 0.85vw, 10px);
-    line-height: 1;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: oklch(0.465 0.008 250);
-  }
-
-  .object {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: clamp(48px, 13vw, 190px);
-  }
-  .plate {
-    width: clamp(220px, 24vw, 300px);
-    aspect-ratio: 300 / 386;
-    border: 1px solid oklch(0.895 0.005 240);
-    overflow: hidden;
-    flex: none;
-  }
-  .plate img { width: 100%; height: 100%; object-fit: contain; display: block; }
-
-  .registry {
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
-    text-align: right;
-    flex: none;
-    margin-top: clamp(24px, 4vw, 48px);
-    font-family: 'Noto Sans', sans-serif;
-    font-size: clamp(9px, 0.85vw, 10px);
-    line-height: 1;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: oklch(0.505 0.008 250);
-  }
-
-  .foot {
-    font-size: clamp(9px, 0.85vw, 10px);
-    line-height: 1;
-    letter-spacing: 0.24em;
-    text-transform: uppercase;
-    color: oklch(0.525 0.008 250);
-  }
-
-  @media (max-width: 640px) {
-    .object {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 36px;
-    }
-    .plate { width: 74%; }
-    .registry { text-align: left; margin-top: 0; }
-  }
-</style>
+<script src="./support.js"></script>
 </head>
 <body>
-<div class="page">
-  <header class="head">
-    <div class="wordmark">Yellowmudblanket</div>
-    <a class="social" href="https://www.instagram.com/yellowmudblanket/" target="_blank" rel="noopener">instagram</a>
-  </header>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/industry-b4197e80-0e85-48d2-9e19-6a4b64d72a9f/styles.css">
+<script src="_ds/industry-b4197e80-0e85-48d2-9e19-6a4b64d72a9f/_ds_bundle.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Spectral:wght@200;300;400&display=swap">
+<style>
+  html, body { margin: 0; padding: 0; background: oklch(0.958 0.005 240); }
+  a { color: oklch(0.245 0.009 250); text-decoration: none; }
+  a:hover { color: oklch(0.16 0.009 250); }
+  footer a { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 6px; text-decoration-thickness: 0.5px; transition: text-decoration-color 320ms ease, color 320ms ease; }
+  footer a:hover { text-decoration-color: oklch(0.72 0.006 250); }
+  a:focus-visible, input:focus-visible, button:focus-visible { outline: 2px solid oklch(0.34 0.008 250); outline-offset: 4px; }
+  ::selection { background: oklch(0.245 0.009 250); color: oklch(0.958 0.005 240); }
+  input::placeholder { color: oklch(0.495 0.009 250); }
+</style>
+</helmet>
 
-  <main class="object">
-    <div class="plate">
-      <img src="assets/throw-05.jpg" alt="Undyed alpaca throw folded over a plain wooden chair" width="896" height="1152">
+<div style="min-height: 100vh; background: oklch(0.958 0.005 240); color: oklch(0.245 0.009 250); font-family: Spectral, Georgia, serif; -webkit-font-smoothing: antialiased; padding: clamp(24px, 4vw, 52px); display: flex; flex-direction: column;">
+
+  <main style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: clamp(40px, 7vh, 76px); padding: clamp(40px, 8vh, 96px) 0;">
+
+    <h1 style="margin: 0; font-family: Spectral, serif; font-weight: 200; font-size: clamp(13px, 4.2vw, 52px); line-height: 1; letter-spacing: 0.24em; text-indent: 0.24em; text-transform: uppercase; white-space: nowrap;">Yellowmudblanket</h1>
+
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; width: min(100%, 340px);">
+      <div style="font-family: 'Noto Sans', sans-serif; font-size: clamp(9px, 0.85vw, 10px); line-height: 1; letter-spacing: 0.26em; text-transform: uppercase; color: oklch(0.495 0.009 250);">First access</div>
+
+      <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ onSubmit }}" style="display: flex; align-items: center; gap: 12px; width: 100%; border-bottom: 1px solid oklch(0.735 0.006 250); padding-bottom: 10px;">
+          <input type="email" required="required" placeholder="Email" aria-label="Email address" style="flex: 1; min-width: 0; font-family: Spectral, serif; font-weight: 300; font-size: clamp(14px, 1.2vw, 16px); line-height: 1.4; color: oklch(0.245 0.009 250); background: transparent; border: 0; border-radius: 0; padding: 0;">
+          <button type="submit" aria-label="Submit email address" style="flex: none; display: flex; align-items: center; justify-content: flex-end; font-family: Spectral, serif; font-weight: 300; font-size: clamp(15px, 1.3vw, 17px); line-height: 1; color: oklch(0.375 0.009 250); background: transparent; border: 0; border-radius: 0; width: 44px; height: 44px; padding: 0; margin: -14px 0; cursor: pointer;" style-hover="{&quot;color&quot;:&quot;oklch(0.185 0.009 250)&quot;}">&#8594;</button>
+        </form>
+      </sc-if>
+
+      <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+        <div style="width: 100%; text-align: center; font-family: Spectral, serif; font-weight: 300; font-size: clamp(14px, 1.2vw, 16px); line-height: 1.2; padding: 0 0 10px; border-bottom: 1px solid oklch(0.845 0.006 240); color: oklch(0.305 0.009 250);">Recorded.</div>
+      </sc-if>
     </div>
-    <div class="registry">
-      <span>01</span>
-      <span>Undyed alpaca</span>
-      <span>Throw</span>
-      <span>2026</span>
-      <span>WA&#x21E;PETUWA&#x14A;</span>
-    </div>
+
+    <sc-if value="{{ showRegistry }}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px clamp(18px, 2.6vw, 34px); font-family: 'Noto Sans', sans-serif; font-size: clamp(9px, 0.85vw, 10px); line-height: 1; letter-spacing: 0.26em; text-transform: uppercase; color: oklch(0.495 0.009 250);">
+        <span>01</span>
+        <span>Undyed alpaca</span>
+        <span>Throw</span>
+        <span>Wa&#x21E;petuwa&#x14A;</span>
+        <span>2026</span>
+      </div>
+    </sc-if>
+
   </main>
 
-  <footer class="foot">&copy; 2026</footer>
+  <footer style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-end; gap: 12px clamp(24px, 4vw, 48px); font-family: 'Noto Sans', sans-serif; font-size: clamp(9px, 0.85vw, 10px); line-height: 1; letter-spacing: 0.26em; text-transform: uppercase; color: oklch(0.495 0.009 250);">
+    <a href="https://www.instagram.com/yellowmudblanket/" target="_blank" rel="noopener" style="color: oklch(0.495 0.009 250); letter-spacing: 0.26em; padding: 12px 14px; margin: -12px -14px;">Instagram</a>
+    <sc-if value="{{ showEnquiry }}" hint-placeholder-val="{{ false }}">
+      <a href="mailto:hello@yellowmudblanket.com" style="color: oklch(0.495 0.009 250); letter-spacing: 0.26em; padding: 12px 14px; margin: -12px -14px;">Enquiry</a>
+    </sc-if>
+  </footer>
+
 </div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showRegistry&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Page&quot;},&quot;showEnquiry&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Page&quot;}}">
+class Component extends DCLogic {
+  state = { submitted: false };
+  renderVals() {
+    return {
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      showRegistry: this.props.showRegistry ?? true,
+      showEnquiry: this.props.showEnquiry ?? false,
+      onSubmit: (e) => { e.preventDefault(); this.setState({ submitted: true }); }
+    };
+  }
+}
+</script>
 </body>
 </html>
