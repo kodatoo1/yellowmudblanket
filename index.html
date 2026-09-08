@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/industry-b4197e80-0e85-48d2-9e19-6a4b64d72a9f/styles.css">
+<script src="_ds/industry-b4197e80-0e85-48d2-9e19-6a4b64d72a9f/_ds_bundle.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Spectral:wght@200;300;400&display=swap">
+<style>
+  html, body { margin: 0; padding: 0; background: oklch(0.958 0.005 240); }
+  a { color: oklch(0.245 0.009 250); text-decoration: none; }
+  a:hover { color: oklch(0.16 0.009 250); }
+  footer a { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 6px; text-decoration-thickness: 0.5px; transition: text-decoration-color 320ms ease, color 320ms ease; }
+  footer a:hover { text-decoration-color: oklch(0.72 0.006 250); }
+  a:focus-visible, input:focus-visible, button:focus-visible { outline: 2px solid oklch(0.34 0.008 250); outline-offset: 4px; }
+  ::selection { background: oklch(0.958 0.005 240); color: #032075; }
+  input::placeholder { color: oklch(0.86 0.02 265); }
+  main input:focus-visible, main button:focus-visible { outline-color: oklch(0.958 0.005 240); }
+</style>
+</helmet>
+
+<div style="min-height: 100vh; background: oklch(0.958 0.005 240); color: oklch(0.245 0.009 250); font-family: Spectral, Georgia, serif; -webkit-font-smoothing: antialiased; padding: clamp(24px, 4vw, 52px); display: flex; flex-direction: column;">
+
+  <main style="flex: 1; display: flex; align-items: center; justify-content: center; padding: clamp(24px, 5vh, 64px) 0;">
+    <div style="width: min(100%, 78vh, 640px); aspect-ratio: 1 / 1; container-type: inline-size; background: #032075; color: oklch(0.958 0.005 240); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: clamp(32px, 9cqi, 64px); padding: clamp(24px, 8cqi, 56px);">
+
+    <h1 style="margin: 0; font-family: Spectral, serif; font-weight: 200; font-size: clamp(11px, 2.6cqi, 17px); line-height: 1; letter-spacing: 0.34em; text-indent: 0.34em; text-transform: uppercase; white-space: nowrap; max-width: 100%; color: oklch(0.958 0.005 240);">Yellowmudblanket</h1>
+
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; width: min(100%, 340px);">
+      <div style="font-family: 'Noto Sans', sans-serif; font-size: clamp(9px, 0.85vw, 10px); line-height: 1; letter-spacing: 0.26em; text-transform: uppercase; color: oklch(0.86 0.02 265);">First access</div>
+
+      <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ onSubmit }}" style="display: flex; align-items: center; gap: 12px; width: 100%; border-bottom: 1px solid oklch(0.72 0.03 265); padding-bottom: 10px;">
+          <input type="email" required="required" placeholder="Email" aria-label="Email address" style="flex: 1; min-width: 0; font-family: Spectral, serif; font-weight: 300; font-size: clamp(14px, 1.2vw, 16px); line-height: 1.4; color: oklch(0.958 0.005 240); background: transparent; border: 0; border-radius: 0; padding: 0;">
+          <button type="submit" aria-label="Submit email address" style="flex: none; display: flex; align-items: center; justify-content: flex-end; font-family: Spectral, serif; font-weight: 300; font-size: clamp(15px, 1.3vw, 17px); line-height: 1; color: oklch(0.86 0.02 265); background: transparent; border: 0; border-radius: 0; width: 44px; height: 44px; padding: 0; margin: -14px 0; cursor: pointer;" style-hover="{&quot;color&quot;:&quot;oklch(0.98 0.005 240)&quot;}">&#8594;</button>
+        </form>
+      </sc-if>
+
+      <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+        <div style="width: 100%; text-align: center; font-family: Spectral, serif; font-weight: 300; font-size: clamp(14px, 1.2vw, 16px); line-height: 1.2; padding: 0 0 10px; border-bottom: 1px solid oklch(0.72 0.03 265); color: oklch(0.958 0.005 240);">Recorded.</div>
+      </sc-if>
+    </div>
+
+    <sc-if value="{{ showRegistry }}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px clamp(18px, 2.6vw, 34px); font-family: 'Noto Sans', sans-serif; font-size: clamp(9px, 0.85vw, 10px); line-height: 1; letter-spacing: 0.26em; text-transform: uppercase; color: oklch(0.86 0.02 265);">
+        <span>01</span>
+        <span>Undyed alpaca</span>
+        <span>Throw</span>
+        <span>Wa&#x21E;petuwa&#x14A;</span>
+        <span>2026</span>
+      </div>
+    </sc-if>
+
+    </div>
+  </main>
+
+  <footer style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-end; gap: 12px clamp(24px, 4vw, 48px); font-family: 'Noto Sans', sans-serif; font-size: clamp(9px, 0.85vw, 10px); line-height: 1; letter-spacing: 0.26em; text-transform: uppercase; color: oklch(0.495 0.009 250);">
+    <a href="https://www.instagram.com/yellowmudblanket/" target="_blank" rel="noopener" style="color: oklch(0.495 0.009 250); letter-spacing: 0.26em; padding: 12px 14px; margin: -12px -14px;">Instagram</a>
+    <sc-if value="{{ showEnquiry }}" hint-placeholder-val="{{ false }}">
+      <a href="mailto:hello@yellowmudblanket.com" style="color: oklch(0.495 0.009 250); letter-spacing: 0.26em; padding: 12px 14px; margin: -12px -14px;">Enquiry</a>
+    </sc-if>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showRegistry&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Page&quot;},&quot;showEnquiry&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Page&quot;}}">
+class Component extends DCLogic {
+  state = { submitted: false };
+  renderVals() {
+    return {
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      showRegistry: this.props.showRegistry ?? true,
+      showEnquiry: this.props.showEnquiry ?? false,
+      onSubmit: (e) => { e.preventDefault(); this.setState({ submitted: true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>
